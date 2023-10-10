@@ -1,29 +1,27 @@
-document.getElementById("input_field").addEventListener("click",function(event){
-        const text= event.target.value;
-        const Apply_button= document.getElementById("Apply_btn");
-        if(text=== "SELL200"){
-            Apply_button.removeAttribute("disabled")
+// document.getElementById("input_field").addEventListener("click",function(event){
+//         const text= event.target.value;
+//         const Apply_button= document.getElementById("Apply_btn");
+//         if(text=== "SELL200"){
+//             Apply_button.removeAttribute("disabled")
             
-        }
-        else{
-            Apply_button.setAttribute("disabled",true)
-        }
-})
+//         }
+//         else{
+//             Apply_button.setAttribute("disabled",true)
+//         }
+// })
 // gap
 document.getElementById("purchase_one").addEventListener("click",function(){
     const kaccessories=product("product-1_price")
     const kaccessories_value=TotalValue(kaccessories)
     const value=putValue("total",kaccessories_value)
 
-
-
-                const product_title=document.getElementById("product-1_title");
-                const Title=product_title.innerText;
-                const OutputTitle=document.getElementById("output_title");
-                const p=document.createElement("p")
-                p.innerText=Title
-                OutputTitle.appendChild(p)
-
+                // const product_title=document.getElementById("product-1_title");
+                // const Title=product_title.innerText;
+                // const OutputTitle=document.getElementById("output_title");
+                // const li=document.createElement("li")
+                // li.innerText=Title
+                // OutputTitle.appendChild(li)
+const output=ol("product-1_title","output_title")
 
 
 
@@ -31,9 +29,10 @@ document.getElementById("purchase_one").addEventListener("click",function(){
  
     if(kaccessories_value >200 || kaccessories_value===200 ){
         const Apply_button= document.getElementById("Apply_btn");
+        
         Apply_button.removeAttribute("disabled")
         document.getElementById("Apply_btn").addEventListener("click",function(){
-
+         // 
                 const kaccessories_discount=discount(kaccessories_value)
             const Discount=putValue("Discount",kaccessories_discount) 
                     // let kaccessories_discount=0;
@@ -43,6 +42,10 @@ document.getElementById("purchase_one").addEventListener("click",function(){
                 
             })
     }
+//     else if(kaccessories_value>0){
+//         const Make_Purchase_button= document.getElementById("make_purchase_btn");
+//         Make_Purchase_button.removeAttribute("disabled")
+//     }
     else{
 const total=putValue("final_total",kaccessories_value)
     }
@@ -56,13 +59,13 @@ document.getElementById("purchase_two").addEventListener("click",function(){
         const value=putValue("total",card_board_value)
 
 
-
-        const product_title=document.getElementById("product-2_title");
-        const Title=product_title.innerText;
-        const OutputTitle=document.getElementById("output_title");
-        const p=document.createElement("p")
-        p.innerText=Title
-        OutputTitle.appendChild(p)
+        const output=ol("product-2_title","output_title")
+        // const product_title=document.getElementById("product-2_title");
+        // const Title=product_title.innerText;
+        // const OutputTitle=document.getElementById("output_title");
+        // const li=document.createElement("li")
+        // li.innerText=Title
+        // OutputTitle.appendChild(li)
 
 
         if(card_board_value >200 || card_board_value===200 ){
@@ -93,12 +96,15 @@ document.getElementById("purchase_three").addEventListener("click",function(){
         const homecooker_value=TotalValue(homecooker)
         const value=putValue("total",homecooker_value)
 
-        const product_title=document.getElementById("product-3_title");
-        const Title=product_title.innerText;
-        const OutputTitle=document.getElementById("output_title");
-        const p=document.createElement("p")
-        p.innerText=Title
-        OutputTitle.appendChild(p)
+        const output=ol("product-3_title","output_title")
+
+
+        // const product_title=document.getElementById("product-3_title");
+        // const Title=product_title.innerText;
+        // const OutputTitle=document.getElementById("output_title");
+        // const li=document.createElement("li")
+        // li.innerText=Title
+        // OutputTitle.appendChild(li)
 
 
 
@@ -131,12 +137,14 @@ document.getElementById("purchase_four").addEventListener("click",function(){
         const SportsBackCap_value=TotalValue(SportsBackCap)
         const value=putValue("total",SportsBackCap_value)
 
-        const product_title=document.getElementById("product-4_title");
-        const Title=product_title.innerText;
-        const OutputTitle=document.getElementById("output_title");
-        const p=document.createElement("p")
-        p.innerText=Title
-        OutputTitle.appendChild(p)
+
+        const output=ol("product-4_title","output_title")
+        // const product_title=document.getElementById("product-4_title");
+        // const Title=product_title.innerText;
+        // const OutputTitle=document.getElementById("output_title");
+        // const li=document.createElement("li")
+        // li.innerText=Title
+        // OutputTitle.appendChild(li)
 
 
         if(SportsBackCap_value >200 || SportsBackCap_value===200){
@@ -171,12 +179,15 @@ document.getElementById("purchase_five").addEventListener("click",function(){
         const FullJerseySet_value=TotalValue(FullJerseySet)
         const value=putValue("total",FullJerseySet_value)
 
-        const product_title=document.getElementById("product-5_title");
-        const Title=product_title.innerText;
-        const OutputTitle=document.getElementById("output_title");
-        const p=document.createElement("p")
-        p.innerText=Title
-        OutputTitle.appendChild(p)
+        const output=ol("product-5_title","output_title")
+
+
+        // const product_title=document.getElementById("product-5_title");
+        // const Title=product_title.innerText;
+        // const OutputTitle=document.getElementById("output_title");
+        // const li=document.createElement("li")
+        // li.innerText=Title
+        // OutputTitle.appendChild(li)
 
 
 
@@ -213,12 +224,15 @@ document.getElementById("purchase_six").addEventListener("click",function(){
         const sportscatest_value=TotalValue(sportscatest)
        const value=putValue("total",sportscatest_value)
 
-       const product_title=document.getElementById("product-6_title");
-       const Title=product_title.innerText;
-       const OutputTitle=document.getElementById("output_title");
-       const p=document.createElement("p")
-       p.innerText=Title
-       OutputTitle.appendChild(p)
+       const output=ol("product-6_title","output_title")
+
+
+//        const product_title=document.getElementById("product-6_title");
+//        const Title=product_title.innerText;
+//        const OutputTitle=document.getElementById("output_title");
+//        const li=document.createElement("li")
+//        li.innerText=Title
+//        OutputTitle.appendChild(li)
 
 
 
@@ -237,8 +251,10 @@ document.getElementById("purchase_six").addEventListener("click",function(){
              
                     const Total_Price=sportscatest_value-sportscatest_discount
                 const Total=putValue("final_total",Total_Price)
+    
+
                      // return sportscatest_value
-             })
+             })  
        }
 else{
         const total=putValue("final_total",sportscatest_value)     
@@ -247,6 +263,9 @@ else{
 document.getElementById("go_home_btn").addEventListener("click",function(){
         location.href="index.html"   
 })
+// document.getElementById("make_purchase_btn") . addEventListener("click",function(){
+         
+// })
 
 
 

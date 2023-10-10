@@ -27,3 +27,16 @@ function discount(number){
 
     return result.toFixed(2);
 }
+
+
+
+// experiment function
+function ol(id1,id2){
+       
+    const product_title=document.getElementById(id1);
+    const Title=product_title.innerText;
+    const OutputTitle=document.getElementById(id2);
+    const li=document.createElement("li")
+    li.innerText=Title
+    OutputTitle.appendChild(li) 
+}

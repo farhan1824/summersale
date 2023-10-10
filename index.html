@@ -13,6 +13,9 @@
     .mainfont{
         font-family: 'Work Sans', sans-serif;
     }
+    .width_for_middle_device{
+      width:768px;
+    }
 </style>
 </head>
 <body>
@@ -31,11 +34,11 @@
             </div>
           </div>
     </header>
-<main class="container  mx-auto grid grid-cols-1 lg:flex  ">
+<main class="container mx-auto  grid grid-cols-1 lg:flex   ">
         <div>
         <!-- kitchenware start -->
         <p class="mainfont text-4xl font-bold text-center lg:text-left">Kitchenware</p>
-        <section class="grid grid-cols-1 sm:gap-6 lg:grid-cols-3"> 
+        <section class="grid grid-cols-1 sm:gap-6 md:grid-cols-2 lg:grid-cols-3"> 
             <!-- 1st one start-->
             <div class="card w-80 lg:w-96 bg-base-100 lg:border-2">
                 <figure class="px-1 lg:px-10 pt-1 lg:pt-10 ">
@@ -126,7 +129,7 @@
         <!-- Sportswear starts -->
 
         <p class="mainfont text-4xl font-bold text-center lg:text-left">Sportswear</p>
-        <section class="grid grid-cols-1 sm:gap-6 lg:grid-cols-3"> 
+        <section class="grid grid-cols-1 sm:gap-6 md:grid-cols-2 lg:grid-cols-3"> 
             <!-- 1st one start-->
             <div class="card w-80 lg:w-96 bg-base-100 lg:border-2">
                 <figure class="px-1 lg:px-10 pt-1 lg:pt-10 ">
@@ -216,7 +219,7 @@
         <!-- Sportswear ends -->
     </div>
     <div>
-      <div class="card p-1 lg:pl-14 mt-11 m-1 lg:ml-10 card-compact w-80 lg:w-96 bg-base-100 border-2">
+      <div class="card p-1 lg:pl-14 mt-11 m-1 lg:ml-10 card-compact w-80  lg:w-96 bg-base-100 border-2">
         <ul>
             <li><p class="mainfont text-2xl font-bold text-center lg:text-left">Have coupon?</p></li>
             <div class="flex">
@@ -234,6 +237,7 @@
         <div class="card p-1 lg:pl-14 mt-11 m-1 lg:ml-10 card-compact w-80 lg:w-96 bg-base-100 border-2">
           <p class="mainfont text-2xl font-bold text-center lg:text-left">THE NAME OF THE PRODUCTS </p>
           <ol class="text-2xl font-bold text-center" id="output_title">
+          
             <!--  -->
             <!--  -->
             <!--  -->
@@ -250,10 +254,17 @@
         <p class="mainfont text-2xl font-bold text-center lg:text-left">Total :<span id="final_total"></span></p>
         <!--  -->
         <!-- The button to open modal -->
-<a href="#my_modal_8" class="btn bg-[#E527B2] text-white">Make Purchase</a>
+
+
+
+
+        <!--  -->
+
+        <!--  -->
+<a href="#my_modal_8"  class=""><button  class="btn bg-[#E527B2] text-white" id="make_purchase_btn ">Make Purchase </button></a>
 
 <div class="modal" id="my_modal_8">
-  <div class="card w-96 bg-base-100 shadow-xl">
+  <div class="card w-80 lg:w-96 bg-base-100 shadow-xl">
     <figure class="px-10 pt-10">
       <img src="./85-summer-sale/images/congo.png" alt="Shoes" class="rounded-xl" />
     </figure>
@@ -274,5 +285,6 @@
     </footer>
     <script src="js/allfunctions.js"></script>
     <script src="js/working.js"></script>
+    <!-- <script src="js/messing_around.js"></script> -->
 </body>
 </html>
